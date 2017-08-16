@@ -1,9 +1,9 @@
 ---
-title: "Page Not Found" #
+title: "페이지를 찾을 수 없음" #
 layout: single-no-ads
-excerpt: "페이지를 찾을 수 없습니다. 픽셀이 다른 캔버스에 있습니다." #
+excerpt: "페이지를 찾을 수 없습니다." #
 sitemap: false
 ---
 
-### 죄송합니다. 방문하려는 페이지가 존재하지 않습니다.
+Sorry, but the page you were trying to view does not exist.
 {: .notice--info}

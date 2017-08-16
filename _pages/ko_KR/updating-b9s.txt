@@ -22,24 +22,24 @@ There have been reports of a wave of bans being handed out to CFW users by Ninte
 
 <div class="notice--danger">{{ notice-1 | markdownify }}</div>
 
-#### 준비물
+#### What you need
 
-* 최신 버전의 [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *(`.7z` 파일)*
+* The latest release of [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *(the `.7z` file)*
 * The latest release of [SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
 * The latest release of [boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *(standard boot9strap; not the `devkit` file, not the `ntr` file)*
-* 최신 버전의 [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
-* 홈브류 [스타터 킷](http://smealum.github.io/ninjhax2/starter.zip)
+* The latest release of [GodMode9](https://github.com/d0k3/GodMode9/releases/latest)
+* The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
 * [`setup_ctrnand_luma3ds.gm9`]({{ base_path }}/gm9_scripts/setup_ctrnand_luma3ds.gm9)
 
-#### 진행 방법
+#### Instructions
 
-##### 섹션 I - 준비 작업
+##### Section I - Prep Work
 
 For all steps in this section, overwrite any existing files on your SD card.
 {: .notice--info}
 
-1. 기기를 종료해 주세요.
-1. SD 카드를 컴퓨터에 삽입해 주세요.
+1. Power off your device
+1. Insert your SD card into your computer
 1. **Leave the old (v7.1) version of Luma3DS (`boot.firm`) as it is. You will update this later.**
 1. Copy _the contents of_ `starter.zip` to the root of your SD card
 1. Create a folder named `boot9strap` on the root of your SD card
@@ -48,24 +48,24 @@ For all steps in this section, overwrite any existing files on your SD card.
 1. Copy `setup_ctrnand_luma3ds.gm9` to the `/gm9/scripts/` folder on your SD card
 1. Copy `SafeB9SInstaller.firm` from the SafeB9SInstaller `.zip` to the `/luma/payloads/` folder on your SD card
 1. Copy `boot9strap.firm` and `boot9strap.firm.sha` from the boot9strap `.zip` to the `/boot9strap/` folder on your SD card
-1. SD 카드를 기기에 다시 삽입해 주세요.
+1. Reinsert your SD card into your device
 
 ##### Section II - Installing boot9strap
 
-1. (start)를 누른 채 시작해 Luma3DS chainloader 메뉴를 실행해 주세요.
+1. Reboot holding (Start) during boot to launch the Luma3DS chainloader menu
 1. Launch SafeB9SInstaller by pressing (A)
 1. Wait for all safety checks to complete
 1. When prompted, input the key combo given to install boot9strap
 1. Once it has completed, press (A) to reboot your device.
-1. 기기를 종료해 주세요.
+1. Power off your device
   + Note that you will receive the error `Unsupported launcher (argc = 0)` until you follow the rest of the instructions on this page
 
 ##### Section III - Updating Luma3DS
 
-1. SD 카드를 컴퓨터에 삽입해 주세요.
+1. Insert your SD card into your computer
 1. Delete the existing `boot.firm` from the root of your SD card
 1. Copy `boot.firm` from the Luma3DS `.7z` to the root of your SD card
-1. SD 카드를 기기에 다시 삽입해 주세요.
+1. Reinsert your SD card into your device
 
 ##### Section IV - Configuring Luma3DS
 
@@ -73,21 +73,21 @@ For all steps in this section, overwrite any existing files on your SD card.
   + If you get a black screen, [follow this troubleshooting guide](troubleshooting#ts_sys_b9s)
 1. Use the (A) button and the D-Pad to turn on the following:    
   + **"Show NAND or user string in System Settings"**
-1. (start)를 눌러 저장하고 기기를 다시 시작해 주세요.
+1. Press (Start) to save and reboot
 
 ##### Section V - CTRNAND Luma3DS
 
 1. Launch GodMode9 by holding (Start) during boot
 1. If you are prompted to create an essential files backup, press (A) to do so, then press (A) to continue once it has completed
-1. (Home)을 눌러 작업 메뉴를 띄워 주세요.
-1. "More..."를 선택해 주세요.
+1. Press (Home) to bring up the action menu
+1. Select "More..."
 1. Select "Scripts..."
 1. Select "setup_ctrnand_luma3ds"
 1. When prompted, press (A) to proceed
-1. (A)를 눌려 SysNAND (lvl1) 쓰기 잠금을 풀고 주어진 키 조합을 입력해 주세요.
-1. (A)를 눌러 진행해 주세요.
+1. Press (A) to unlock SysNAND (lvl1) writing, then input the key combo given
+1. Press (A) to continue
 1. Press (A) to relock write permissions
-1. (start)를 눌러 기기를 다시 시작해 주세요.
+1. Press (Start) to reboot your device
 
 ___
 

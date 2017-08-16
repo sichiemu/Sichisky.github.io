@@ -5,74 +5,74 @@ header:
   overlay_color: "#5e616c" #
   overlay_image: /images/home-page-feature.jpg
   overlay_filter: 0.5
-  cta_label: "시작하기"
-  cta_url: "/ko_KR/get-started" #
+  cta_label: "시작하기" #
+  cta_url: "get-started" #
   caption:
-excerpt: "A complete guide to 3DS custom firmware, <br /> from stock to boot9strap.<br />"
+excerpt: "3DS 커스텀 펌웨어의 완벽 가이드, <br /> 순정부터 boot9strap 까지.<br />"
 ---
 
 {% capture notice-home %}
-오직 _시판용_기기를 (닌텐도 개발자 프로그램의 개발자용이 아닌) 위한 가이드입니다!    
-개발자용 기기("PANDA" 또는 "SNAKE")를 가지고 있다면 [devGuide](https://dev.3ds.guide)를 참고해 주세요.
+이 가이드는 판매되는 (소비자 구매; 닌텐도 개발 프로그램이 아닙니다) 콘솔 _전용입니다_!    
+만약 개발용 ("PANDA" or "SNAKE") 콘솔을 가지고 계시다면, [devGuide](https://dev.3ds.guide)를 살펴보세요.
 {% endcapture %}
 
 <div class="notice--danger">{{ notice-home | markdownify }}</div>
 
-이 가이드를 다른 언어로 [번역](https://translate.3ds.guide/)하기 위해서는 *여러분의* 도움이 필요합니다!
+이 한글번역 가이드는 공식적으로 한글을 지원할때까지 [시치스카이](http://sichisky.kro.kr)가 번역합니다.
 {: .notice--success}
 
-이 가이드는 [토렌트 파일](https://3ds.guide/rss.xml)의 시드 배포를 위해 여러분의 도움이 필요합니다!
+이 가이드는 [these](https://3ds.guide/rss.xml) 이 토렌트 시드를 유지하는데 *당신의* 도움이 필요합니다!
 {: .notice--success}
 
-계속하기 전에 다음 설명을 모두 읽어 주세요.
+처음 페이지를 진행하기 전에 전부 읽어주세요.
 {: .notice--warning}
 
-## 홈브류란 무엇입니까?
+## 홈브류?
 
-[**홈브류**](https://en.wikipedia.org/wiki/List_of_homebrew_video_games)는 일반적으로 닌텐도의 승인을 받지 않은 소프트웨어를 말합니다. 홈브류 게임, 저장 데이터 수정 및 백업 도구 및 구형 시스템용 에뮬레이터 등을 실행할 수 있게 해 줍니다.
+[**홈브류**](https://en.wikipedia.org/wiki/List_of_homebrew_video_games) 는 보통 닌텐도에서 만들어지지않은 소프트웨어에 권한을 부여합니다. 이건 홈브류 게임, 세이브 매니저 같은 툴, 옛 시스템의 에뮬레이터 등을 지원합니다.
 
-In most cases, running homebrew on your device is 100% free using [just the Nintendo 3DS Sound app](homebrew-launcher-(soundhax)). 또한 홈브류를 작동시키기 위해서 상용 게임이나 브라우저에서 다른 종류의 exploit을 사용할 수 있습니다.
+제일 많은 경우 중, 홈브류 구동은 100% 무료입니다! [닌텐도 3DS 사운드 앱으로도 가능합니다.](homebrew-launcher-(soundhax)). 홈브류 구동을 위한 많은 게임, 브라우저 익스플로잇이 존재합니다.
 
-## 커스텀 펌웨어란 무엇입니까?
+## 커스텀 펌웨어?
 
-**커스텀 펌웨어** ("CFW") 는 유저랜드 홈브류에서 쉽게 할 수 없는 고급 핵을 사용할 수 있게 해 줍니다. 예로, 서명 패치 (signature patches) 를 통해 서명되지 않은 타이틀을 설치해 홈 메뉴에 나타나게 할 수 있습니다.
+**커스텀 펌웨어** ["커펌"] ("CFW") 는 홈브류에서 구동하기 어려웟던 핵들을 가능하게 해줍니다. 예를 들자면, 서명 패치는 홈 메뉴에서 닌텐도의 앱이 아닌걸 띄울 수 있습니다.
 
-CFW can be set up on any console on any version (but may require additional tools / accessories for versions >11.3.0).
+CFW 는 아무 기기나 아무 버전에서 가능합니다. (하지만 11.4 이상은 도구를 필요로 합니다).
 
-## 이 가이드는 무엇을 설치하는 가이드입니까?
+## 가이드는 무엇을 설치하나요?
 
-이 가이드의 최종 목적은 순정 펌웨어의 3DS에
-firmware to boot9strap powered Custom Firmware. 일부 버전에서는 해당 버전을 벗어나는 발판으로 홈브류를 사용하지만, 여전히 최종 목적은 커스텀 펌웨어입니다.
+이 가이드의 마지막 목표는 순정 3DS를
+boot9strap라는 좋은 커스텀 펌웨어를 설치하게 하는 것 입니다. 몇 버전은, 홈브류를 활용하지만, 여전히 커스텀 펌웨어가 목적입니다.
 
-boot9strap is the newest and best method of launching Custom Firmware that gives us nearly full control of the system only milliseconds into boot, which is similar to the effect of BootMii for the Wii. It gives us even earlier control than arm9loaderhax did, and, unlike standard sighax, boot9strap uses an NDMA overwrite exploit in order to gain Boot9 code execution. This means that any console running boot9strap is capable of dumping the console unique OTP (`OTP.bin`), the ARM11 bootrom (`boot11.bin`), and the ARM9 bootrom (`boot9.bin`).
+boot9strap 는 시스템의 총 권한을 주는 최신형이자 최고의 커스텀 펌웨어입니다. 예를 들어 1000분의 1초에 부팅이 가능합니다. Wii의 BootMii와도 비슷한거죠. boot9strap은 arm9loaderhax보다 더 일찍 권한을 부여합니다. 보통의 sighax와 다르게, boot9strap 는 NDMA 덮어쓰기 익스플로잇을 사용해 Boot9 코드 실행합니다. 이 말은 boot9strap를 사용하는 어느 기기든 기기의 고유 OTP (`OTP.bin`), ARM11 Bootrom (`boot11.bin`), 그리고 ARM9 bootrom (`boot9.bin`)를 추출할 수 있습니다.
 
-The benefits of boot9strap over other Custom Firmware launch methods are numerous, and as such it is recommended to use this guide over any other that relies on outdated software (such as menuhax + rxTools, arm9loaderhax, or even normal sighax).
+다른 커스텀 펌웨어에 비해 boot9strap의 이점은 다양합니다, 그리고 다른 옛날의 소프트웨어보다 가이드를 따르는것이 좋습니다. (예를 들어 menuhax + rxTools, arm9loaderhax, 아니면 평범한 sighax).
 
-For information on how boot9strap works, please see [this presentation](https://sciresm.github.io/33-and-a-half-c3/) by [SciresM](https://github.com/SciresM/).
+boot9strap의 원리를 알고 싶으시다면, [SciresM](https://github.com/SciresM/)의 [이 프레젠테이션](https://sciresm.github.io/33-and-a-half-c3/) 을 봐주세요.
 
-For a list of each of the calculated sighax signatures (the platform boot9strap is built on), see [this gist](https://gist.github.com/SciresM/cdd2266efb80175d37eabbe86f9d8c52).
+계산적인 sighax 서명 리스트를 보시려면 (boot9strap 기반),[this gist](https://gist.github.com/SciresM/cdd2266efb80175d37eabbe86f9d8c52)를 보십시오.
 
-## 커스텀 펌웨어로 무엇을 할 수 있나요?
+## 전 커스텀 펌웨어로 무엇을 할 수 있나요?
 
-+ 지역에 상관 없이 게임 팩 및 e숍 게임의 실행 및 설치
-+ 홈 메뉴를 자유롭게 편집-만들어진 [테마](https://3dsthem.es/), [배지](https://badges.3dsthem.es/)및 [시작 화면](https://splash.3dsthem.es/)
-+ 보유 게임의 "롬 핵" 사용
-+ 게임 플레이 및 애플리케이션 스크린샷 촬영
-+ 많은 게임의 저장 데이터 [백업, 편집 및 복원] (https://gbatemp.net/threads/413143/)
-+ RetroArch 또는 다른 에뮬레이터를 통해 구형 시스템의 게임 실행 (New 닌텐도 3DS에 최적화됨)
-+ 시스템에 홈브류 타이틀을 설치하고 홈 메뉴에 등록
-+ 게임 카드를 설치할 수 있는 포맷으로 추출하고 게임 카드 없이 게임 플레이
-+ New 3DS or New 2DS only: stream live gameplay to your PC wirelessly with NTR CFW
-+ 오래 전에 막히거나 닌텐도 3DS에서 작동하지 않았던 많은 닌텐도 DS용 플래시 게임 카드 실행
-+ 홈브류 접근 권한을 유지한 채 최신 버전으로 안전하게 업데이트
++ 게임카드 및 eShop 게임 무료 플레이, 국가코드 무시
++ 유저가 만든 [테마](https://3dsthem.es/), [배지](https://badges.3dsthem.es/), [스플래쉬 화면](https://splash.3dsthem.es/) 으로 홈 화면을 꾸며보세요.
++ 당신이 가지고 있는 게임에 롬 핵을 사용
++ 게임 화면이나 앱 스크린샷
++ 많은 게임의 세이브 데이터를 [백업, 수정, 복구](https://gbatemp.net/threads/413143/)
++ 에뮬레이터를 이용한 옛날 게임 구동, RetroArch나 다른 에뮬레이터. (New Nintendo 3DS / New Nintendo 2DS 에서 제일 잘 됩니다.)
++ 시스템에 홈브류 어플 설치, 홈 화면에 띄우기
++ 설치 가능한 형식으로 게임을 추출, 게임 카드 없이 게임을 즐겨보세요!
++ New 3DS 나 New 2DS 전용: NTR CFW 게임 화면을 컴퓨터에 송출해보세요
++ 많은 막혀버린 많은 DS 닥터칩을 구동해보세요
++ 아무리 최신 버전으로 업데이트해도 홈브류 구동이 가능합니다.
 
-## 시작하기 전에 무엇을 알고 있어야 합니까?
+## 시작하기 전 뭘 알아야 하나요?
 
-+ **가이드를 시작하기 앞서 반드시 3DS 해킹의 위험 요소를 인지하기 바랍니다: 시스템을 수정하는 모든 행위는 기기를 복구가 불가능한 벽돌로 만들 위험을 안고 있습니다. 매우 드물어도 가능성은 존재하므로 모든 절차을 정확하게 따라 주세요.**
++ **Before beginning the guide, you must know the risks of 3DS hacking: EVERY time you modify your system, there is always the potential for an UNRECOVERABLE brick. They're rare, but still a possibility so make sure you follow ALL directions EXACTLY.**
 + If you have already hacked your 3DS before to get an EmuNAND setup, and would like to move the contents of your previous EmuNAND to your new SysNAND CFW, you should follow all instructions and restore your existing EmuNAND when prompted once you reach [Finalizing Setup](finalizing-setup).
 + This guide will work on New 3DS, Old 3DS, New 2DS, and Old 2DS in all regions on firmware 11.5.0 or below.
-+ 모든 것이 계획대로 진행될 경우 시작할 때 갖고 있던 데이터가 모두 보존됩니다. (게임, NNID, 저장 데이터 등)
-+ **갑작스러운 방전으로 인한 데이터 손상 혹은 손실을 예방하기 위해 AC 어댑터를 연결한 채 진행해 주세요!**
-+ SD 카드는 [GPT가 아니라 MBR](http://www.howtogeek.com/245610/) 기반이어야 합니다. (처음 샀을 때 끼워져 있는 SD 카드는 기본적으로 MBR입니다.)
-+ 새 SD 카드를 포맷해야 한다면, [`guiformat`](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm)을 사용할 수 있습니다. Allocation unit size를 32K로 설정해 주세요.
-+ 2DS는 소프트웨어 측면에서 Old 3DS와 본질적으로 동일하며, "Old 3DS"가 언급된 모든 단계는 2DS에도 적용됩니다.
++ If everything goes according to plan, you will lose no data and end up with everything that you started with (games, NNID, saves, etc will be preserved).
++ **Keep your device plugged in and charged throughout the entire process to avoid data loss or damage from an unexpected power-off!**
++ Your SD card should be [MBR, not GPT](http://www.howtogeek.com/245610/) (the SD card that comes with your device will be MBR by default).
++ If you need to format a brand new SD card, you can use [`guiformat`](http://www.ridgecrop.demon.co.uk/index.htm?guiformat.htm) and set to an Allocation Unit Size of 32K.
++ The 2DS is essentially identical to the Old 3DS in terms of software, and that any steps which say "Old 3DS" also apply to 2DS.
