@@ -6,17 +6,15 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "ko-KR"
+locale                   : "en-US"
 title                    : "3DS Guide"
 title_separator          : "-"
 name                     : "시치스카이"
 description              : "sighax 커스텀펌웨어 가이드"
-=======
 title                    : "3DS 가이드"
 title_separator          : "-"
 name                     : "시치스카이"
 description              : "sighax 커스텀 펌웨어 가이드"
->>>>>>> 5761070809036001e5e2c86e37e48ce7f57af9d3
 url                      : "https://sichisky.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 enforce_ssl              : "sichisky.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
