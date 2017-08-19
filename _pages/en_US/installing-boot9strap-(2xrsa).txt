@@ -1,61 +1,61 @@
 ---
-title: "Installing boot9strap (2xrsa)"
+title: "boot9strap 설치 (2xrsa)"
 ---
 
-#### What you need
+#### 준비물
 
-* The latest release of [SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
-* The latest release of [boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *(standard boot9strap; not the `devkit` file, not the `ntr` file)*
-* The latest release of [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *(the `.7z` file)*
-* The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
+* 최신 버전의 [SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
+* 최신 버전의 [boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *(아무것도 붙지 않은것)*
+* 최신 버전의 [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *(.7z 형태 파일)*
+* 홈브류 [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
 
-#### Instructions
+#### 지시
 
-##### Section I - Prep Work
+##### 섹션 I - 준비물 정리
 
-1. Power off your device
-1. Insert your SD card into your computer
-1. Copy `boot.firm` from the Luma3DS `.7z` to the root of your SD card
-1. Copy _the contents of_ `starter.zip` to the root of your SD card
-1. Create a folder named `boot9strap` on the root of your SD card
-1. Copy `boot9strap.firm` and `boot9strap.firm.sha` from the boot9strap `.zip` to the `/boot9strap/` folder on your SD card
-1. Copy `arm9.bin` and `arm11.bin` from the SafeB9SInstaller `.zip` to the root of your SD card
+1. 기기의 전원을 꺼 주십시오.
+1. 컴퓨터에 SD카드를 연결해 주십시오.
+1. Luma3DS `.7z`의 `boot.firm`을 SD카드의 루트에 복사해주세요.
+1. `starter.zip`의 _모든 파일을_ SD카드의 루트에 복사해주세요.
+1. `boot9strap` 라는 폴더를 SD카드의 루트에 복사해주세요.
+1. boot9strap `.zip`의 `boot9strap.firm` 와 `boot9strap.firm.sha`를 SD카드의 `/boot9strap/` 폴더로 복사해주세요.
+1. SafeB9SInstaller `.zip`의 `arm9.bin` 와 `arm11.bin`를 SD카드의 루트에 복사해주세요.
 
     ![]({{ base_path }}/images/screenshots/boot9strap-2xrsa-file-layout.png)
     {: .notice--info}
 
-1. Reinsert your SD card into your device
-1. Power on your device
+1. 기기의 SD카드를 재 연결 해주세요.
+1. 기기의 전원을 켜주세요.
 
-##### Section II - Launching SafeB9SInstaller
+##### 섹션 II - SafeB9SInstaller 구동
 
-1. Launch the browser and go to the following URL on your device
+1. 브라우저를 구동하고 아래 URL로 진입해주세요.
   + `http://2xrsa.3ds.guide`
-  + If you are on a New 3DS, New 2DS, or Old 2DS and Wireless Communication is off, you can re-enable the wireless by removing the battery and unplugging the charger for several seconds then booting back up
-  + If you get the error "This service is not available in your region", use the System Settings to set your device's country to match the NAND region you installed with 2.1.0 CTRTransfer
-  + If you forgot to disable parental controls before CTRTransfering or otherwise cannot access wireless settings, note that the device will autoconnect to any network named `attwifi` with no password
-  + If you get another error, [follow this troubleshooting guide](troubleshooting#ts_browser)
-1. If the exploit was successful, you will have booted into SafeB9SInstaller
+  + 만약 기기가 New 3DS, New 2DS, 혹은 Old 2DS 이고 무선 통신이 꺼져있다면, 배터리를 빼거나 충전기를 해제함으로써 무선 통신을 킬 수 있습니다.
+  + 만약 "This service is not available in your region" 라는 오류를 받는다면, 본체 설정에서 국가 설정을 2.1.0 CTRTransfer 한 국적으로 설정해주세요.
+  + 만약 보호자 보호 기능이나 설정에 접속이 불가능한 경우, 기억하십시오. 귀하의 기기는 자동으로 비밀번호가 없는 `attwifi`에 연결을 시도할것 입니다.
+  + 다른 오류에 걸리셨다면, [이 문제해결 가이드를 따라주세요](troubleshooting#ts_browser)
+1. 만약 익스플로잇이 성공적으로 끝났다면, SafeB9SInstaller로 진입할 것입니다.
 
-##### Section III - Installing boot9strap
+##### 섹션 III - boot9strap 설치
 
-1. Wait for all safety checks to complete
-1. When prompted, input the key combo given to install boot9strap
-1. Once it has completed, press (A) to reboot your device
+1. 모든 안전 체크가 끝날때 까지 기다리십시오.
+1. 시행되었다면, 키 콤보를 입력해 boot9strap를 설치하십시오.
+1. 끝났다면, (A)키를 눌러 기기를 재시작 하십시오.
 
-##### Section IV - Configuring Luma3DS
+##### 섹션 IV - Luma3DS 설정
 
-1. Your device should have rebooted into the Luma3DS configuration menu
-  + If you get a black screen, [follow this troubleshooting guide](troubleshooting#ts_sys_b9s)
-1. Use the (A) button and the D-Pad to turn on the following:    
+1. 당신의 기기는 재부팅 후에 Luma3DS 설정창으로 진입했을 것입니다.
+  + 검은 화면이 지속된다면, [이 문제 해결 가이드를 따르십시오.](troubleshooting#ts_sys_b9s)
+1. Luma3DS 설정창에서, D-패드와 (A) 버튼을 이용해 아래 항목을 체크해주십시오.:    
   + **"Show NAND or user string in System Settings"**
-1. Press (Start) to save and reboot
-  + If you get an error, just continue the next page
+1. (Start)키를 눌러 저장하고 재시작하십시오.
+  + 에러가 나타난다면, 무시하고 다음 페이지로 계속하십시오.
 
 ___
 
-Note that *New 3DS* users who ended up on 2.1.0 after a CTRTransfer *must* [restore their NAND backup](godmode9-usage#nand_restore) before going to the [Finalizing Setup](finalizing-setup) page.
+*뉴 3DS* 사용자들은 *꼭, 필수로*  [NAND 백업 복구를](godmode9-usage#nand_restore) [최종 설정](finalizing-setup) 하기전에 해야합니다.
 {: .notice--danger}
 
-Continue to [Finalizing Setup](finalizing-setup)
+[최종 설정](finalizing-setup)으로 계속하십시오.
 {: .notice--primary}
