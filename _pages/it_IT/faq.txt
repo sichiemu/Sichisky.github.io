@@ -4,20 +4,17 @@ title: "FAQ"
 
 {% capture notice-1 %}
 
-<a name="faq_latestfw" />**D:** *Ho installato l'ultima versione di sistema, posso comunque installare un custom firmware?*    
+<a name="faq_latestfw" />**D:** *Ho installato l'ultima versione di sistema. Posso comunque installare un custom firmware?*    
 **R:** Sì
 
 <a name="faq_updatecfw" />**D:** *Come aggiorno Luma3DS?*    
 **R:** Usa Luma3DS Updater
 
-<a name="faq_gatewaysky" />**D:** *Ho sentito di questa cosa per cui dovrei pagare (Gateway, Sky3DS, ecc), è qualcosa che mi serve?*    
+<a name="faq_gatewaysky" />**D:** *Ho sentito di questa cosa per cui dovrei pagare (Gateway, Sky3DS, ecc). È qualcosa che mi serve?*    
 **R:** No. boot9strap permette il caricamento di file prima ancora dell’avvio del sistema.
 
 <a name="faq_gatewaysaves" />**D:** *Come faccio a spostare i salvataggi da un setup Gateway esistente ai giochi installati nella console?*    
 **R:** Guarda [qui](https://gbatemp.net/threads/425743/)
-
-<a name="faq_need" />**D:** *Di cosa ho bisogno per seguire questa guida?*    
-**R:** Questa guida può essere completata utilizzando esclusivamente software gratuiti
 
 <a name="faq_risky" />**D:** *Quanto è rischioso modificare la mia console?*    
 **R:** Allo stato attuale è *praticamente impossibile* brickare la console a meno di ignorare volontariamente tutte le misure di sicurezza.

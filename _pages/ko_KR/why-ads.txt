@@ -3,17 +3,13 @@ title: "Why Ads?" #
 layout: single-no-ads
 ---
 
-광고가 있는 이유 -원 제작자
-
-번역하지 않습니다.
-
 This project is the culmination of thousands of hours of constant work.
 
-I maintain this guide, for free, and ensure it is always up to date. Because of this effort, I feel that it is fair for me to attempt to gain a meager income from my work.
+저는 이 가이드를 무료로 관리하며 항상 최신 정보를 제공하기 위해 노력합니다. Because of this effort, I feel that it is fair for me to attempt to gain a meager income from my work.
 
-This site costs you nothing to use, and all that I display are non-intrusive ads. If you still have a problem with this, feel free to block these ads.
+사이트 이용은 무료이며 방해되지 않은 광고만 표시하고 있습니다. 이에 이의가 있다면 광고를 차단하셔도 좋습니다.
 
-If you do block ads, I would like to also remind you of the [Donations](donations) page, but once again that is optional too.
+강제성은 없으나 광고를 차단하시는 경우에는 [기부](donations) 페이지를 통한 지원도 가능합니다.
 
-Thanks,<br>
+감사합니다,<br>
 Plailect

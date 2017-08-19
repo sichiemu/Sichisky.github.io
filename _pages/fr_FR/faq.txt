@@ -4,20 +4,17 @@ title: "FAQ"
 
 {% capture notice-1 %}
 
-<a name="faq_latestfw" /> **Q :** *Je suis sur la dernière version du système, est-ce que ma console est hackable ?*    
+<a name="faq_latestfw" /> **Q :** *Je suis sur la dernière version du système. Est-ce que ma console est hackable ?*    
 **R :** Oui
 
 <a name="faq_updatecfw" /> **Q :** *Comment mettre à jour Luma3DS ?*    
 **R :** Utilisez Luma3DS Updater
 
-<a name="faq_gatewaysky" /> **Q :** *J’ai entendu parler de cette chose payante (Gateway, Sky3DS, etc.), est-ce quelque chose dont j’ai besoin ?*    
+<a name="faq_gatewaysky" /> **Q :** *J’ai entendu parler de cette chose payante (Gateway, Sky3DS, etc.), est-ce quelque chose dont j’ai besoin ?*. Est-ce quelque chose que j’ai besoin ?*    
 **R :** Non. boot9strap est une méthode de chargement hax qui s’exécute au démarrage.
 
 <a name="faq_gatewaysaves" /> **Q :** *Comment puis-je transférer mes sauvegardes de mon Gateway vers les jeux installés sur ma console ?*    
 **R :** Voir [cet article](https://gbatemp.net/threads/425743/)
-
-<a name="faq_need" /> **Q :** *De quoi ai-je besoin pour suivre ce guide ?*    
-**R:** Ce guide peut être intégralement suivi en n'utilisant que des logiciels gratuits
 
 <a name="faq_risky" /> **Q :** *Est-il risqué de hacker ma console ?*    
 **R :** Les Bricks sont *en pratique* presque impossibles, à moins 

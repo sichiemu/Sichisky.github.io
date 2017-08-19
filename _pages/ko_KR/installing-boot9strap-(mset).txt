@@ -2,22 +2,22 @@
 title: "Installing boot9strap (MSET)"
 ---
 
-If you have already hacked your device before and have a EmuNAND based CFW setup, this guide deals exclusively with SysNAND and you should follow all instructions from within or applying to SysNAND. Note that the terms EmuNAND and RedNAND refer to slightly different implementations of [the same concept](http://3dbrew.org/wiki/NAND_Redirection).
+이 설명은 SysNAND를 기준으로 제작되었으므로 기기가 EmuNAND 기반이라면 모든 과정을 SysNAND에 적용해 주세요. EmuNAND와 RedNAND는 [동일한 개념](http://3dbrew.org/wiki/NAND_Redirection)을 다른 방식으로 구현한 것입니다.
 
-#### What you need
+#### 준비물
 
 * The latest release of [SafeB9SInstaller](https://github.com/d0k3/SafeB9SInstaller/releases/latest)
 * The latest release of [boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *(standard boot9strap; not the `devkit` file, not the `ntr` file)*
-* The latest release of [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *(the `.7z` file)*
-* The Homebrew [Starter Kit](http://smealum.github.io/ninjhax2/starter.zip)
+* 최신 버전의 [Luma3DS](https://github.com/AuroraWright/Luma3DS/releases/latest) *(`.7z` 파일)*
+* 홈브류 [스타터 킷](http://smealum.github.io/ninjhax2/starter.zip)
 * Any DS flashcart that works on your device version
 
-#### Instructions
+#### 진행 방법
 
-##### Section I - Prep Work
+##### 섹션 I - 준비 작업
 
-1. Power off your device
-1. Insert your SD card into your computer
+1. 기기를 종료해 주세요.
+1. SD 카드를 컴퓨터에 삽입해 주세요.
 1. Copy `boot.firm` from the Luma3DS `.7z` to the root of your SD card
 1. Copy _the contents of_ `starter.zip` to the root of your SD card
 1. Create a folder named `boot9strap` on the root of your SD card
@@ -27,9 +27,9 @@ If you have already hacked your device before and have a EmuNAND based CFW setup
     ![]({{ base_path }}/images/screenshots/boot9strap-mset-file-layout.png)
     {: .notice--info}
 
-1. Reinsert your SD card into your device
+1. SD 카드를 기기에 다시 삽입해 주세요.
 1. Copy `SafeB9SInstaller.nds` from the SafeB9SInstaller `.zip` to your DS flashcart
-1. Power on your device
+1. 기기를 시작해 주세요.
 
 ##### Section II - Launching SafeB9SInstaller
 
@@ -53,7 +53,7 @@ If you have already hacked your device before and have a EmuNAND based CFW setup
   + If you get a black screen, [follow this troubleshooting guide](troubleshooting#ts_sys_b9s)
 1. Use the (A) button and the D-Pad to turn on the following:    
   + **"Show NAND or user string in System Settings"**
-1. Press (Start) to save and reboot
+1. (start)를 눌러 저장하고 기기를 다시 시작해 주세요.
   + If you get an error, just continue the next page
 
 ___

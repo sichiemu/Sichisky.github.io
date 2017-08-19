@@ -9,7 +9,7 @@ Note that the flashcart will not be able to be used for its standard functions w
 Note that in some rare circumstances, it may be possible for the flashing process to **brick** a counterfeit flashcart and render it permanently unusable. This is unlikely, but nevertheless only original listed flashcarts are supported. To reduce the chance of receiving a counterfeit card, it is recommended that you use a reputable site to buy your flashcart (such as [NDS Card](http://www.nds-card.com/))
 {: .notice--danger}
 
-#### What you need
+#### 준비물
 
 * Your ntrboot compatible DS / DSi flashcart:
   + Either the Acekard 2i or R4i Gold 3DS RTS
@@ -19,9 +19,9 @@ Note that in some rare circumstances, it may be possible for the flashing proces
 * The latest release of [boot9strap](https://github.com/SciresM/boot9strap/releases/latest) *(`ntr` boot9strap; not the `devkit` file)*
 * The latest release of [ntrboot_flasher](https://github.com/kitling/ntrboot_flasher/releases/latest)
 
-#### Instructions
+#### 진행 방법
 
-##### Section I - Prep Work
+##### 섹션 I - 준비 작업
 
 1. Power off **the source 3DS**
 1. Insert **the source 3DS**'s SD card into your computer
@@ -36,13 +36,13 @@ Note that in some rare circumstances, it may be possible for the flashing proces
 1. Launch the Luma3DS chainloader by holding (Start) during boot on **the source 3DS**
 1. Select "ntrboot_flasher"
 1. Select "Dump Flash"
-1. Wait until the process is completed
-1. Press (B) to return to the main menu
+1. 완료될 때까지 기다려 주세요.
+1. (B)를 눌러 메인 메뉴로 돌아가 주세요.
 1. Select "Inject Ntrboot"
 1. Press (Y) to proceed
 1. Press (R) for retail unit ntrboot
-1. Wait until the process is completed
-1. Press (B) to return to the main menu
+1. 완료될 때까지 기다려 주세요.
+1. (B)를 눌러 메인 메뉴로 돌아가 주세요.
 1. Select "EXIT" to power off **the source 3DS**
 
 ___

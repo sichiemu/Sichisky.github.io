@@ -1,14 +1,17 @@
 ---
-title: "시작하기 (뉴 3DS)"
+title: "Get Started (New 3DS)"
 ---
 
-적절한 버전 페이지를 찾으시려면 아래 차트를 봐 주십시오. ~부터 ~까지는 그 사이도 포함합니다. 이건 그걸 의미합니다, 예를 들어, "9.0.0 부터 9.2.0 까지" 는 9.0.0, 9.1.0, 9.2.0를 뜻합니다.
+Select the appropriate page for your version from the chart below. Note that the "from" and "to" fields are inclusive. This means that, for example, the "from 9.0.0 to 9.2.0" row includes 9.0.0, 9.1.0, and 9.2.0.
 
-게다가, 세로 2 칸 중 버전의 마지막 번호도 지원합니다. (브라우저의 유무). 만약 버전의 마지막 숫자가 -0이라면 브라우저가 없는거고, 아니라면 존재하는겁니다.
+Additionally, note that the last number of your system version (which is preceded by a dash) refers to your browser version. Currently, the browser version is irrelevant to the New 3DS in this guide.
 
-또한 당신은 [카드 업데이트](cart-update) 로 버전을 높여 지시를 따르실 수 있습니다.
+For all versions you can also [Cart Update](cart-update) to a higher version in the same column to follow its instructions.
 
-기기의 버전은 본체 설정의 위 화면의 오른쪽 아래에서 찾을 수 있습니다.
+Your device version can be found at the bottom right of the top screen of the System Settings.
+
+![]({{ base_path }}/images/screenshots/system-version.png)
+{: .notice--info}
 
 <table>
   <colgroup>
@@ -18,8 +21,8 @@ title: "시작하기 (뉴 3DS)"
   </colgroup>
   <thead>
     <tr>
-      <th style="text-align: center; font-weight: bold;">부터</th>
-      <th style="text-align: center; font-weight: bold;">까지</th>
+      <th style="text-align: center; font-weight: bold;">From</th>
+      <th style="text-align: center; font-weight: bold;">To</th>
       <th style="text-align: center; font-weight: bold;"></th>
     </tr>
   </thead>
@@ -27,17 +30,17 @@ title: "시작하기 (뉴 3DS)"
     <tr>
       <td style="text-align: center; font-weight: bold;">2.1.0</td>
       <td style="text-align: center; font-weight: bold;">2.1.0</td>
-      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(2xrsa)">boot9strap 설치 (2xrsa)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(2xrsa)">Installing boot9strap (2xrsa)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">8.1.0</td>
       <td style="text-align: center; font-weight: bold;">8.1.0</td>
-      <td style="text-align: center; font-weight: bold;"><a href="ntr-and-cubic-ninja">NTR 와 큐빅 닌자</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="ntr-and-cubic-ninja">NTR and Cubic Ninja</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">9.0.0</td>
       <td style="text-align: center; font-weight: bold;">11.3.0</td>
-      <td style="text-align: center; font-weight: bold;"><a href="homebrew-launcher-(soundhax)">홈브류 런처 (사운드핵스)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="homebrew-launcher-(soundhax)">Homebrew Launcher (Soundhax)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;">11.4.0</td>
@@ -47,7 +50,7 @@ title: "시작하기 (뉴 3DS)"
     <tr>
       <td style="text-align: center; font-weight: bold;">11.5.0</td>
       <td style="text-align: center; font-weight: bold;">11.5.0</td>
-      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(dsiware)">boot9strap 설치 (DSIWare)</a></td>
+      <td style="text-align: center; font-weight: bold;"><a href="installing-boot9strap-(dsiware)">Installing boot9strap (DSiWare)</a></td>
     </tr>
     <tr>
       <td style="text-align: center; font-weight: bold;" colspan="2">ALL VERSIONS<br></td>

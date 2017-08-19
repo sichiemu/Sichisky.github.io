@@ -3,10 +3,6 @@ title: "Why Ads?" #
 layout: single-no-ads
 ---
 
-광고가 있는 이유 -원 제작자
-
-번역하지 않습니다.
-
 This project is the culmination of thousands of hours of constant work.
 
 I maintain this guide, for free, and ensure it is always up to date. Because of this effort, I feel that it is fair for me to attempt to gain a meager income from my work.

@@ -1,32 +1,32 @@
 ---
-title: "카드 업데이트"
+title: "Cart Update"
 ---
 
-모든 게임 카드는 플레이가 가능해지는 버전의 복사본을 포함합니다, 이유는 아무나 낮은 버전에서 카트리지로 그 버전으로 업데이트하기 위해서 입니다. (인터넷 접속 없이도).
+All game carts contain a copy of the required system version to play it, allowing anyone on a lower version to use the cartridge to update to that version (even without an internet connection).
 
 {% capture notice-1 %}
 
-주의! 카드 업데이트는 주요 앱만 업데이트 합니다. 예를 들어 본체 설정, 홈 메뉴, 등등. 카드 업데이트는 닌텐도 3DS 사운드나 인터넷 환경을 업데이트 하지 않습니다, 예를 들어 데이터 이사, 인터넷 브라우저, 엇갈림 Mii 광장, eShop이 있습니다.
+Note that Cart Updates will only deliver updates to core features, such as the System Settings, Home Menu, etc. Cart Updates will not deliver updates to Nintendo 3DS Sound and Network features, such as System Transfer, Internet Browser, StreetPass Mii Plaza, or eShop.
 
-이 말은 곧 옛날 닌텐도 3DS 사운드를 사용하는 버전의 카드 업데이트는 *(유럽, 일본, 한국, 미국, 구다수이며 7.0.0 이하 버전)* to one that introduced a newer Nintendo 3DS Sound version 는 [Soundhax](homebrew-launcher-(soundhax))를 고장냅니다! [alternate method](homebrew-launcher-(alternatives)) 로 홈브류에 진입하세요(?)
+This means that using a Cart Update from a version containing an older Nintendo 3DS Sound version *(<7.0.0 for Old 3DSs in the EUR, JPN, KOR, and USA regions)* to one that introduced a newer Nintendo 3DS Sound version will break [Soundhax](homebrew-launcher-(soundhax))! You will need an [alternate method](homebrew-launcher-(alternatives)) of entering the Homebrew Launcher!
 
-또, 이 말은 카드 업데이트로 브라우저 설치는 할 수 없다는걸 의미합니다. 카드 업데이트는 **오직** 원래의 시스템 버전만 업데이트 합니다. *예를 들어, 2.1.0-0 -> 6.0.0-0)*. 마지막 숫자 *(the -0)* 는 **절대** 바뀌지 않습니다.
+This also means that a cart update will NOT install a browser if you do not already have one. This will **only** update the actual system version *(for example, 2.1.0-0 -> 6.0.0-0)*. The last number *(the -0)* will **not** change.
 {% endcapture %}
 
 <div class="notice--warning">{{ notice-1 | markdownify }}</div>
 
-**9.9.0 이상 버전의 카드 업데이트는 표준 본체 업데이트를 하기 전 까지 브라우저를 지웁니다.**
+**Updating with a game cart containing the version 9.9.0 or above will remove your browser until a standard online update is performed!**
 {: .notice--danger}
 
-#### 준비물
+#### What you need
 
-* 당신이 업데이트 하고 싶어하는 [버전이 포함된](http://www.3dsdb.com/) 게임카드
+* A game cart that [contains the version](http://www.3dsdb.com/) you wish to update to
 
-#### 지시
+#### Instructions
 
-1. (L) + (R) + (A) + (UP) 를 누르며 부팅해 회복 모드로 진입하십시오.
-1. 작동했다면, 업데이트를 거부하십시오.
-1. 기기를 재시작하십시오.
-1. 준비가 되지 않았을 경우 게임을 넣으십시오(?) [게임을 기기에 넣으십시오.]
-1. 게임을 실행하려고 시도해보십시오.
-1. 즉시 업데이트 하십시오.
+1. Boot your device into recovery mode by holding (L) + (R) + (A) + (UP) while powering on
+1. If prompted, decline the update
+1. Reboot your device
+1. Put the game in your device if it is not already
+1. Attempt to launch the game
+1. Update when prompted

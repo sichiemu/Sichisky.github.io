@@ -37,7 +37,7 @@ title: "Boot9strapin asentaminen (ntrboot)"
 1. Aseta magneetti konsolin päälle aktivoidaksesi lepotilan anturin
   + Jos käytät 2DS:ää, käytä sen sijaan konsolin lepotilakytkintä
 1. Pidä pohjassa (POWER) + (START) + (SELECT) + (X) -painikeyhdistelmää useamman sekunnin ajan ja päästä ne sitten irti
-  + Lepotilan aktivoiminen magneetilla saattaa vaatia useamman yrityksen, koska anturi on sijoitettu huonosti
+  + Lepotilan aktivoiminen magneetilla saattaa vaatia useamman yrityksen, koska anturi on hankalassa paikassa
 1. Jos haavoittuvuuden hyödyntäminen onnistui, SafeB9SInstallerin pitäisi avautua
 
 ##### Vaihe III – Boot9strapin asentaminen
@@ -45,7 +45,7 @@ title: "Boot9strapin asentaminen (ntrboot)"
 1. Odota, kunnes kaikki turvatarkistukset on suoritettu
 1. Syötä kehotettaessa annettu painikeyhdistelmä asentaaksesi boot9strapin
 1. Kun toiminto on suoritettu, pakota konsolisi sammuksiin pitämällä virtapainiketta pohjassa
-  + Konsolisi käynnistyy vain SafeB9SInstaller-ruutuun, kunnes olet käynyt läpi seuraavan vaiheen
+  + Konsolisi käynnistyy vain SafeB9SInstaller-ruutuun, ennen kuin olet käynyt läpi seuraavan vaiheen
 
 ##### Vaihe IV – Luma3DS:n määrittäminen
 
@@ -68,13 +68,20 @@ Jatka osioon [Asennuksen viimeistely](finalizing-setup)
 
 ___
 
-##### Vaihe V – Ntrbootin poistaminen
+Seuraavien vaihtoehtoisten vaiheiden avulla voit palauttaa flash-korttisi alkuperäiseen tilaansa (jotta sitä voi taas käyttää sen normaaleihin käyttötarkoituksiin).
 
-Tämä on vaihtoehtoinen vaihe, jonka avulla voit palauttaa flash-korttisi alkuperäiseen tilaansa (jotta sitä voi taas käyttää sen normaaleihin käyttötarkoituksiin).
-{: .notice--info}
+Huomaa, että Acekard 2i -flash-kortti pystyy edelleen avaamaan `.nds`-tiedostoja, kun ntrboot on asennettuna sille. Tämä pätee vain, jos Acekard 2i -korttia käytetään mukautetun laiteohjelmiston omaavassa 3DS:ssä! Kun ntrboot on asennettuna Acekard 2i:lle, se ei voi avata `.nds`-tiedostoja NDS-, NDSL-, DSi- eikä 3DS-konsoleilla, joissa on vakiolaiteohjelmisto.
 
-Älä käy läpi tätä vaihetta, ennen kuin olet käynyt läpi tämän osion muut vaiheet.
-{: .notice--warning}
+Älä käy läpi näitä vaiheita ennen kuin olet käynyt läpi tämän osion muut vaiheet.
+
+##### Vaihe V (i) – Ntrbootin poistaminen (NDS-asennusohjelma)
+
+1. Irrota flash-korttisi **kohde-3DS**:stä
+1. Aseta SD-kortiton flash-korttisi takaisin **lähde-NDS/-NDSL**-konsoliin
+1. Paina (Y):tä palauttaaksesi flash-muistin
+1. Paina (B):tä poistuaksesi
+
+##### Vaihe V (ii) – Ntrbootin poistaminen (monta 3DS:ää)
 
 1. Avaa **lähde-3DS**:llä Luma3DS:n ketjulataaja pitämällä (START)-painiketta pohjassa konsolin käynnistyessä
 1. Valitse "ntrboot_flasher"
@@ -83,3 +90,32 @@ Tämä on vaihtoehtoinen vaihe, jonka avulla voit palauttaa flash-korttisi alkup
 1. Odota, kunnes toiminto on suoritettu
 1. Paina (B):tä palataksesi päävalikkoon
 1. Valitse "EXIT" sammuttaaksesi **lähde-3DS**:n
+
+##### Vaihe V (iii) – Ntrbootin poistaminen (yksi 3DS)
+
+###### Tarpeet
+
+* Ntrboot_flasherin [viimeisin julkaisu](https://github.com/kitling/ntrboot_flasher/releases/latest)
+* Flash-korttiasi vastaava tiedosto, joka sisältää kopion sen flash-muistista:
+  + <i class="fa fa-magnet" aria-hidden="true" title="Tämä on magneettilinkki. Käytä torrent-ohjelmaa ladataksesi tiedoston."></i> – [`R4i_Gold_3DS_RTS-Flashrom.zip`](magnet:?xt=urn:btih:0bd5db43b86bcba7aa862c65e15ef8a6358b7099&dn=R4i_Gold_3DS_RTS-Flashrom.zip&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce)
+  + <i class="fa fa-magnet" aria-hidden="true" title="Tämä on magneettilinkki. Käytä torrent-ohjelmaa ladataksesi tiedoston."></i> – [`Acekard_2i_(HW_44)-Flashrom.zip`](magnet:?xt=urn:btih:1f8830ce7fea3a806999734fb8a457fa3e649c1d&dn=Acekard_2i_%28HW_44%29-Flashrom.zip&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce)
+  + <i class="fa fa-magnet" aria-hidden="true" title="Tämä on magneettilinkki. Käytä torrent-ohjelmaa ladataksesi tiedoston."></i> – [`Acekard_2i_(HW_81)-Flashrom.zip`](magnet:?xt=urn:btih:948e6865b57fa2fc469d68df500f774a6d5887a4&dn=Acekard_2i_%28HW_81%29-Flashrom.zip&tr=udp%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.yoshi210.com%3A6969%2Fannounce&tr=http%3A%2F%2Fexplodie.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969%2Fannounce&tr=http%3A%2F%2Ftorrent.gresille.org%2Fannounce&tr=udp%3A%2F%2Ftracker.tiny-vps.com%3A6969%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=udp%3A%2F%2F9.rarbg.com%3A2710%2Fannounce&tr=udp%3A%2F%2Ftracker.filetracker.pl%3A8089%2Fannounce&tr=http%3A%2F%2Ftracker.baravik.org%3A6970%2Fannounce&tr=http%3A%2F%2Fp4p.arenabg.com%3A1337%2Fannounce&tr=http%3A%2F%2Ftracker.tfile.me%2Fannounce&tr=http%3A%2F%2Ftracker.aletorrenty.pl%3A2710%2Fannounce&tr=http%3A%2F%2Ftracker1.wasabii.com.tw%3A6969%2Fannounce&tr=http%3A%2F%2Ftracker.opentrackr.org%3A1337%2Fannounce&tr=udp%3A%2F%2Fzer0day.ch%3A1337%2Fannounce)
+  + Acekard 2i -käyttäjät tarvitsevat muistiin kirjoittamansa HW Rev -numeron
+  + Jos käytät Acekard 2i -korttia etkä kirjoittanut HW Rev -numeroa muistiin, voit nähdä sen käyttämällä ntrboot_flasherin "Dump Flash" -toimintoa
+
+###### Ohjeet
+
+1. Sammuta konsolisi
+1. Aseta SD-korttisi tietokoneeseesi
+1. Luo `ntrboot`-niminen kansio SD-korttisi juureen
+1. Kopioi flash-muisti-`.zip`-pakkauksesta `backup.bin` SD-korttisi `/ntrboot/`-kansioon
+1. Luo `payloads`-niminen kansio SD-korttisi `luma`-kansioon 
+1. Kopioi ntrboot_flasher-`.zip`-pakkauksesta `ntrboot_flasher.firm` **lähde-3DS**:n SD-kortin `/luma/payloads`-kansioon
+1. Aseta SD-korttisi takaisin konsoliisi
+1. Aseta ntrboot-yhteensopiva DS-/DSi-flash-korttisi konsoliisi
+1. Avaa ntrboot_flasher pitämällä (START)-painiketta pohjassa konsolin käynnistyessä
+1. Valitse "Restore Flash"
+1. Paina (Y):tä jatkaaksesi
+1. Odota, kunnes toiminto on suoritettu
+1. Paina (B):tä palataksesi päävalikkoon
+1. Valitse "EXIT" sammuttaaksesi konsolisi
